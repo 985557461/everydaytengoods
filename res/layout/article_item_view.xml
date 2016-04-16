@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.xy.DayTenGoods"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/white_round_shape">
+    <com.xy.DayTenGoods.util.round_image.RoundPartImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:roundWidth="8dp"
+            app:roundHeight="8dp"
+            app:leftTopRound="true"
+            app:leftBottomRound="false"
+            app:rightTopRound="true"
+            app:rightBottomRound="false"
+            android:layout_marginBottom="12dp"/>
+    <TextView
+            android:id="@+id/articleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="#393939"
+            android:textSize="15sp"
+            android:lines="2"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginBottom="10dp"/>
+</LinearLayout>
