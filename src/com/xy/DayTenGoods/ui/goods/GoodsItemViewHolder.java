@@ -30,6 +30,7 @@ public class GoodsItemViewHolder extends RecyclerView.ViewHolder implements View
     private ImageView imageView;
     private TextView goodsName;
     private TextView nowPrice;
+    private TextView saleCount;
 
     private GoodsItemModel itemModel;
 
@@ -41,6 +42,7 @@ public class GoodsItemViewHolder extends RecyclerView.ViewHolder implements View
         imageView = (ImageView) rootView.findViewById(R.id.imageView);
         goodsName = (TextView) rootView.findViewById(R.id.goodsName);
         nowPrice = (TextView) rootView.findViewById(R.id.nowPrice);
+        saleCount = (TextView) rootView.findViewById(R.id.saleCount);
 
         rootView.setOnClickListener(this);
     }
@@ -61,9 +63,14 @@ public class GoodsItemViewHolder extends RecyclerView.ViewHolder implements View
             goodsName.setText("");
         }
         if (!TextUtils.isEmpty(itemModel.now_price)) {
-            nowPrice.setText(itemModel.now_price);
+            nowPrice.setText(itemModel.now_price + "Ԫ");
         } else {
             nowPrice.setText("");
+        }
+        if (!TextUtils.isEmpty(itemModel.goods_valume)) {
+            saleCount.setText(itemModel.goods_valume);
+        } else {
+            saleCount.setText("");
         }
     }
 

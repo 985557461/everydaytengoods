@@ -18,4 +18,6 @@ public class GoodsItemModel {
     public String goods_id;
     @SerializedName("goods_url")
     public String goods_url;
+    @SerializedName("goods_valume")
+    public String goods_valume;
 }

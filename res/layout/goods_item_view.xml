@@ -44,5 +44,13 @@
                 android:textSize="14sp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"/>
+        <TextView
+                android:id="@+id/saleCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff2d47"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
     </RelativeLayout>
 </LinearLayout>

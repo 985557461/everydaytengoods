@@ -32,6 +32,7 @@ public class ActivityMain extends ActivityBaseNoSliding implements View.OnClickL
 
     private HotFragment hotFragment;
     private ArticleFragment articleFragment;
+    private MineFragment mineFragment;
 
     /**
      * back finish*
@@ -135,6 +136,11 @@ public class ActivityMain extends ActivityBaseNoSliding implements View.OnClickL
                 hotTextView.setSelected(false);
                 zhiNanTextView.setSelected(false);
                 myCenterTextView.setSelected(true);
+
+                if (mineFragment == null) {
+                    mineFragment = new MineFragment();
+                }
+                switchContent(mFragmentCurrent, mineFragment);
             }
             break;
         }
